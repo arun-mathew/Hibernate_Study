@@ -2,16 +2,24 @@ package com.arun.study.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="MESSAGE")
 public class Message {
 	
 	@Id
+	@Column(name="MESSAGE_ID")
 	private long id;
+	
+	@Column(name="MESSAGE_CONTENT")
 	private String content;
+	
+	@Column(name="DATE")
 	private Date createdTime;
+	
+	@Column(name="AUTHOR")
 	private String author;
 	
 	public Message() {
