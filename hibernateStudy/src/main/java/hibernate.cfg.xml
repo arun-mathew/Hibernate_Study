@@ -20,6 +20,7 @@
 	    <property name="show_sql">true</property>
 	    <property name="hbm2ddl.auto">create</property>
 	    <mapping class="com.arun.study.model.Message"/>
+	    <mapping class="com.arun.study.model.AnnotationTest"/>
 	   <!--  <mapping class="com.arun.hibernate.Message"/>
 	    <mapping class="com.arun.hibernate.Vehicle"/> -->
     </session-factory>
